@@ -33,10 +33,6 @@ inView(".mangeelementerinview", () => {
   // };
 });
 
-inView(".box7", () => {
-  animate("box7", { opacity: [0, 1] }, { duration: 7 });
-});
-
 animate("body", { opacity: [0, 1] }, { duration: 4 });
 
 inView(".box1", () => {
@@ -61,6 +57,10 @@ inView(".box5", () => {
 
 inView(".box6", () => {
   animate(".box6", { x: [-4000, 0] }, { duration: 4 });
+});
+
+inView(".box7", () => {
+  animate(".box7", { y: [2000, 0] }, { duration: 2 });
 });
 
 scroll(animate(".progress", { strokeDasharray: ["0,1", "1,1"] }));
