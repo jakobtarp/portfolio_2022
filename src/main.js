@@ -1,3 +1,4 @@
+import "./input.css";
 import "./style.css";
 
 /* Import af Motion One bibliotek */
@@ -65,28 +66,24 @@ inView(".box7", () => {
 
 scroll(animate(".progress", { strokeDasharray: ["0,1", "1,1"] }));
 
-scroll(
-  animate(".scrollzoomimg", {
-    scale: [1, 1.5],
-  }),
-  {
-    target: document.querySelector(".scrollzoom"),
-    offset: ["0.5 0.5", "1 1"],
-  }
-);
+const navSlide = () => {
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links a");
 
-const items = document.querySelectorAll("#horisontalliste li");
-scroll(
-  animate("#horisontalliste", {
-    transform: ["none", `translateX(-${items.length - 1}00vw)`],
-  }),
-  { target: document.querySelector("#horisontalscrollsection") }
-);
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
 
-const burger = document.querySelector(".burger");
-const menu = document.querySelector(".nav-menu");
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s `;
+      }
+    });
+    burger.classList.toggle("toggle");
+  });
+  //
+};
 
-burger.addEventListener("click", () => {
-  burger.classList.toggle("active");
-  menu.classList.toggle("active");
-});
+navSlide();
