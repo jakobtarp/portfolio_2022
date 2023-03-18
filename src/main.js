@@ -4,6 +4,8 @@ import "./style.css";
 /* Import af Motion One bibliotek */
 import { animate, stagger, inView, scroll, timeline } from "motion";
 
+scroll(animate(".progress", { strokeDasharray: ["0,1", "1,1"] }));
+
 // import Alpine from "alpinejs";
 // window.Alpine = Alpine;
 // Alpine.start();
@@ -67,8 +69,6 @@ import { animate, stagger, inView, scroll, timeline } from "motion";
 // inView(".box7", () => {
 //   animate(".box7", { y: [2000, 0] }, { duration: 2 });
 // });
-
-// scroll(animate(".progress", { strokeDasharray: ["0,1", "1,1"] }));
 
 // // const navSlide = () => {
 // //   const burger = document.querySelector(".burger");

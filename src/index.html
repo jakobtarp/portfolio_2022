@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
-        <script type="module" src="./main.js"></script>
+    
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
     <title>Portfolio 2023</title>
@@ -22,14 +22,14 @@
 
   <!-- Procesbar  -->
 
-  <div class="procesbar">
+  <div class="procesbar ">
   <svg width="60" height="60" viewBox="0 0 100 100">
     <circle cx="50" cy="50" r="30" pathLength="1" class="bg" />
     <circle cx="50" cy="50" r="30" pathLength="1" class="progress" />
   </svg>
   </div>
 
-  <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6 shadow-xl" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-sky-700' : isOpen , 'bg-transparent' : !isOpen}">
+  <nav class="top-0 z-10 flex w-full flex-wrap fixed items-center justify-between p-6 shadow-xl" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-sky-700' : isOpen , 'bg-transparent' : !isOpen}">
     <!--Logo etc-->
     <div class="mr-6 flex flex-shrink-0 items-center text-sky-500">
 
@@ -46,24 +46,24 @@
 
     <!--Menu-->
     <div class="hidden mt-8  w-full flex-grow " :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show.transition="true">
-      <ul class="list-reset flex-1 items-center  pt-6 lg:pt-0">
-        <li class="mr-3">
-          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110  hover:underline" href="#skills" @click="isOpen = false">Skills </a>
+      <ul class="list-reset flex-1 items-center text-center font-medium  pt-6 lg:pt-0">
+        <li class="mr-3 b">
+          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110  hover:underline" href="#skills" @click="isOpen = false">/ Skills /</a>
         </li>
-        <li class="mr-3">
-          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#projects" @click="isOpen = false">Projects</a>
+        <li class="mr-3 b">
+          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#projects" @click="isOpen = false">/ Projects /</a>
         </li>
-        <li class="mr-3">
-          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#passion" @click="isOpen = false">Passion </a>
+        <li class="mr-3 b">
+          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#passion" @click="isOpen = false">/ Passion /</a>
         </li>
-        <li class="mr-3">
-          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#cv" @click="isOpen = false">CV</a>
+        <li class="mr-3 b">
+          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#cv" @click="isOpen = false">/ CV /</a>
         </li>
-        <li class="mr-3">
-          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#resume" @click="isOpen = false">Resume </a>
+        <li class="mr-3 b">
+          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#resume" @click="isOpen = false">/ Resume /</a>
         </li>
-        <li class="mr-3">
-          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#contact" @click="isOpen = false">Contact</a>
+        <li class="mr-3 b">
+          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#contact" @click="isOpen = false">/ Contact /</a>
         </li>
        
       </ul>
