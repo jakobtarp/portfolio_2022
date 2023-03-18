@@ -18,8 +18,8 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
     <title>Portfolio 2023</title>
     <link rel="icon" type="image/x-icon" href="/public/img/mig.webp" />
-    <script type="module" crossorigin src="./assets/main-dadf5203.js"></script>
-    <link rel="stylesheet" href="./assets/index-e688b39f.css">
+    <script type="module" crossorigin src="./assets/main-028590b5.js"></script>
+    <link rel="stylesheet" href="./assets/index-7f968777.css">
   </head>
 
   <!-- Procesbar  -->
@@ -31,7 +31,7 @@
   </svg>
   </div>
 
-  <nav class="top-0 z-10 flex w-full flex-wrap fixed items-center justify-between p-6 shadow-xl" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-transparent backdrop-blur-xl' : isOpen , 'bg-transparent' : !isOpen}">
+  <nav class="top-0 z-10 flex w-full flex-wrap fixed items-center justify-between p-6 " x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-transparent backdrop-blur-xl' : isOpen , 'bg-transparent' : !isOpen}">
     <!--Logo etc-->
     <div class="mr-6 flex flex-shrink-0 items-center text-sky-500">
 
@@ -257,7 +257,64 @@
       </div>
     </grid>
 
-          <section id="contact" class="grid place-items-center">
+     
+
+          <section id="contact" class="grid h-screen place-items-center md:grid-cols-2 lg:grid-cols-2">
+        <div class="hidden md:block lg:block">
+          <div class="flex">
+            <div class=" md:mr-10 lg:mr-10"><h2 class="inline-flex bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-sky-500 via-sky-700 to-sky-900 bg-clip-text px-5 text-center text-4xl font-bold text-transparent lg:text-6xl">Contact</h2></div>
+            <div class="lg:box7 hidden md:block lg:block"><hr class="mx-auto my-4 h-1 w-20 justify-center rounded border-0 bg-sky-400 md:my-10 lg:w-48" /></div>
+          </div>
+        </div>
+        <div class="md:hidden lg:hidden mt-auto">
+          <h2 class="mb-10 inline-flex bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-sky-500 via-sky-700 to-sky-900 bg-clip-text px-5 text-center text-4xl font-bold text-transparent lg:text-6xl">Contact</h2>
+          <img class="mx-auto h-10 animate-bounce md:hidden lg:hidden" src="img/downarrow..webp" alt="" />
+        </div>
+
+        <div class="grid gap-10 lg:gap-20">
+          <div>
+            <div class="mx-auto grid grid-cols-2">
+              <a href="tel:+4540911335"><img class="mx-auto w-10" src="img/phone-call..webp" alt="phone" /></a>
+              <div class="grid">
+                <h3 class="text-xl lg:text-2xl">Telefon</h3>
+                <a href="tel:+4540911335"><p class="text-gray-500">+45 40 91 13 35</p></a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="mx-auto grid grid-cols-2">
+              <a href="mailto:jakob.tarp@outlook.com"> <img class="mx-auto w-10" src="img/email..webp" alt="mail" /></a>
+              <div class="grid">
+                <h3 class="text-xl lg:text-2xl">Mail</h3>
+                <a href="mailto:jakob.tarp@outlook.com"> <p class="text-gray-500">Jakob.tarp@outlook.com</p></a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="mx-auto grid grid-cols-2">
+              <img class="mx-auto w-10" src="img/like..webp" alt="phone" />
+              <div class="grid">
+                <h3 class="text-xl lg:text-2xl">Social</h3>
+                <div class="flex gap-4">
+                  <a href="https://www.linkedin.com/in/jakob-tarp-97b5231b8/"><img class="w-10" src="https://api.iconify.design/skill-icons:linkedin.svg" alt="linkedin" /></a>
+                  <a href="https://www.instagram.com/jakob.tarp/?hl=da"><img class="w-10" src="https://api.iconify.design/skill-icons:instagram.svg" alt="Instagram" /></a>
+                  <a href="https://www.jakobtarp.com"><img class="w-10" src="img/site.webp" alt="Instagram" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <footer class="p-5 text-center text-sm"><p class="footerp">©Jakob Tarp</p></footer>
+    
+  </body>
+</html>
+
+     <!-- <section id="contact" class="grid place-items-center">
         <div class="my-auto md:mr-10 lg:mr-10"><h2 class="inline-flex bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-sky-500 via-sky-700 to-sky-900 bg-clip-text px-5 text-center text-4xl font-bold text-transparent lg:text-6xl">Contact</h2></div>
 
         <div class="grid-cols box-border grid rounded-2xl border-4 bg-gradient-to-b from-gray-900 via-sky-600 to-black p-3">
@@ -293,7 +350,7 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="rotate-90"><hr class="my-auto mb-auto h-1 justify-center rounded border-0 bg-sky-400" /></div> -->
+      
 
             <div class="mx-auto my-auto flex place-items-center">
               <div class="ml-auto flex h-[250px] w-1 rounded border-0 bg-sky-300 p-0.5"></div>
@@ -304,10 +361,4 @@
             </div>
           </div>
         </div>
-      </section>
-    </div>
-    </div>
-    <footer class="p-5 text-center text-sm"><p class="footerp">©Jakob Tarp</p></footer>
-    
-  </body>
-</html>
+      </section> -->
