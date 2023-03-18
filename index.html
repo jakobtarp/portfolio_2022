@@ -18,8 +18,8 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
     <title>Portfolio 2023</title>
     <link rel="icon" type="image/x-icon" href="/public/img/mig.webp" />
-    <script type="module" crossorigin src="./assets/main-b79caf35.js"></script>
-    <link rel="stylesheet" href="./assets/index-e7ffa5c7.css">
+    <script type="module" crossorigin src="./assets/main-f4c91486.js"></script>
+    <link rel="stylesheet" href="./assets/index-06dd58d2.css">
   </head>
 
   <!-- Procesbar  -->
@@ -39,15 +39,15 @@
     </div>
 
     <!--Toggle button (hidden on large screens)-->
-    <button @click="isOpen = !isOpen" type="button" class="block px-2 text-white hover:text-white focus:text-gray-500 focus:outline-none lg:hidden" :class="{ 'transition transform-180': isOpen }">
-      <svg class="h-8 w-8 fill-current text-sky-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <button @click="isOpen = !isOpen" type="button" class="block px-8 text-white hover:text-white focus:text-gray-500 focus:outline-none lg:hidden" :class="{ 'transition transform-180': isOpen }">
+      <svg class="h-9 w-9 fixed fill-current text-sky-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path x-show="isOpen" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
         <path x-show="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
       </svg>
     </button>
 
     <!--Menu-->
-    <div class="hidden  w-full flex-grow " :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show.transition="true">
+    <div class="hidden mt-8  w-full flex-grow " :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show.transition="true">
       <ul class="list-reset flex-1 items-center  pt-6 lg:pt-0">
         <li class="mr-3">
           <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110  hover:underline" href="#skills" @click="isOpen = false">Skills </a>
@@ -75,7 +75,7 @@
   
   <body class="bg-gradient-to-b from-black via-gray-900 to-gray-700">
       <div class="mx-auto place-items-center p-6 text-white lg:max-w-screen-lg lg:p-8 text-focus-in">
-    <div class="mx-auto grid md:h-screen lg:h-screen grid-cols-2 place-content-center lg:place-items-center">
+    <div class="mx-auto grid h-screen grid-cols-2 place-content-center lg:place-items-center">
       <div class="mx-auto mt-auto grid">
         <h1 class="inline-block bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-sky-500 via-sky-700 to-sky-900 bg-clip-text text-3xl font-bold text-transparent md:text-7xl lg:mb-2 lg:text-7xl">Jakob Tarp</h1>
         <h2 class="inline-block bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-sky-500 via-sky-700 to-sky-900 bg-clip-text text-xl font-bold text-transparent md:text-4xl lg:text-4xl">Multimediedesigner</h2>
