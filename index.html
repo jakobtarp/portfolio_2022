@@ -18,8 +18,8 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
     <title>Portfolio 2023</title>
     <link rel="icon" type="image/x-icon" href="/public/img/mig.webp" />
-    <script type="module" crossorigin src="./assets/main-909b6436.js"></script>
-    <link rel="stylesheet" href="./assets/index-f7d60ae6.css">
+    <script type="module" crossorigin src="./assets/main-dadf5203.js"></script>
+    <link rel="stylesheet" href="./assets/index-e688b39f.css">
   </head>
 
   <!-- Procesbar  -->
@@ -31,7 +31,7 @@
   </svg>
   </div>
 
-  <nav class="top-0 z-10 flex w-full flex-wrap fixed items-center justify-between p-6 shadow-xl" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-sky-700' : isOpen , 'bg-transparent' : !isOpen}">
+  <nav class="top-0 z-10 flex w-full flex-wrap fixed items-center justify-between p-6 shadow-xl" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-transparent backdrop-blur-xl' : isOpen , 'bg-transparent' : !isOpen}">
     <!--Logo etc-->
     <div class="mr-6 flex flex-shrink-0 items-center text-sky-500">
 
@@ -50,22 +50,22 @@
     <div class="hidden mt-8  w-full flex-grow " :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show.transition="true">
       <ul class="list-reset flex-1 items-center text-center font-medium  pt-6 lg:pt-0">
         <li class="mr-3 b">
-          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110  hover:underline" href="#skills" @click="isOpen = false">/ Skills /</a>
+          <a class="200ms inline-block py-2 px-4 text-sky-400 filter transition hover:scale-110  hover:underline" href="#skills" @click="isOpen = false">/ Skills /</a>
         </li>
         <li class="mr-3 b">
-          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#projects" @click="isOpen = false">/ Projects /</a>
+          <a class="200ms inline-block py-2 px-4 text-sky-400 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#projects" @click="isOpen = false">/ Projects /</a>
         </li>
         <li class="mr-3 b">
-          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#passion" @click="isOpen = false">/ Passion /</a>
+          <a class="200ms inline-block py-2 px-4 text-sky-400 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#passion" @click="isOpen = false">/ Passion /</a>
         </li>
         <li class="mr-3 b">
-          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#cv" @click="isOpen = false">/ CV /</a>
+          <a class="200ms inline-block py-2 px-4 text-sky-400 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#cv" @click="isOpen = false">/ CV /</a>
         </li>
         <li class="mr-3 b">
-          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#resume" @click="isOpen = false">/ Resume /</a>
+          <a class="200ms inline-block py-2 px-4 text-sky-400 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#resume" @click="isOpen = false">/ Resume /</a>
         </li>
         <li class="mr-3 b">
-          <a class="200ms inline-block py-2 px-4 text-gray-900 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#contact" @click="isOpen = false">/ Contact /</a>
+          <a class="200ms inline-block py-2 px-4 text-sky-400 filter transition hover:scale-110 hover:font-semibold hover:underline" href="#contact" @click="isOpen = false">/ Contact /</a>
         </li>
        
       </ul>
