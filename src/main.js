@@ -1,12 +1,12 @@
 import "./input.css";
 import "./style.css";
 
+/* Import af Motion One bibliotek */
+import { animate, stagger, inView, scroll, timeline } from "motion";
+
 import Alpine from "alpinejs";
 window.Alpine = Alpine;
 Alpine.start();
-
-/* Import af Motion One bibliotek */
-import { animate, stagger, inView, scroll, timeline } from "motion";
 
 inView(".tracking-in-expand", () => {
   animate(".tracking-in-expand", { x: [-2000, 0] }, { duration: 2 });
